@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../img/align_itfavicon.ico">
+        <link rel="stylesheet" href="../css/stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <script defer src="../js/script.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSAQ5cox91CUwvo7viD9csdAZKhGVMNe0&callback=initMap&libraries=&v=weekly"></script>
+        <title>Contact</title>
+    </head>
+    <body class="container">
+        <div id="layout_contact">
+            <div id="logo_navigation" class="nav_styling">
+                <a class="logo" href="../index.html">
+                    <img src="../img/logo_background_v2.png" alt="Achtergrond logo Align-IT">
+                    <div class="logo_text">Align-IT</div>
+                </a>
+                <nav class="menu-area">
+                    <ul>
+                        <li><a class="nav_active" href="../index.html">Home</a></li>
+                        <li><a class="nav_active" href="../pages/over_ons.html" >Over ons</a></li>
+                        <li><a class="nav_active" href="../pages/diensten.html">Diensten</a></li>
+                        <li><span class="nav">Projecten <i class="fa fa-caret-down"></i></span>
+                            <div class="nav_dropdown">
+                                <ul>
+                                    <li><a href="../pages/profipack.html">Profipack</a></li>
+                                    <li><a href="../pages/nouvez.html">Nouvez</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="btn">
+                    <a href="../pages/contact.html">Contact</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div id="gmp-map" class="container_content"></div>
+            <div id="tekst_contactpagina" class="container_content">
+                <h1 class="h1_styling">Neem contact op met Align-IT:</h1>
+                <p>Vul in het onderstaand contact uw gegevens in en stel uw vraag. Wij antwoorden zo spoedig mogelijk op uw aanvraag.</p><br>
+                <p>NAW gegevens:</p>
+                <p>Align-IT</p>
+                <p>Abraham Colijnhof 15, 3417 EP</p>
+                <p>Montfoort</p>
+            </div>
+            <form id="contactformulier" class="project_card" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+                    <label for="voornaam">Voornaam:</label>
+                    <input id="voornaam" name="voornaam" type="text" placeholder="John" required>
+                    <label for="achternaam">Achternaam:</label>
+                    <input id="achternaam" name="achternaam" type="text" placeholder="Doe" required>
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" placeholder="john@doe.com" required>
+                    <label for="tel">Telefoonnummer:</label>
+                    <input id="tel" name="tel" type="tel" maxlength="10" placeholder="0612345678">
+                    <label for="vraag">Uw vraag:</label>
+                    <textarea id="vraag" name="vraag" placeholder="Stel hier uw vraag." rows="5" cols="70" required></textarea>
+                    <div class="flex">
+                        <input type="submit" value="versturen" class="btn">
+                    </div>
+            </form>
+            <footer class="container_content footer_styling">
+                <h4>Align-IT</h4>
+                <p class="copyright">&copy; 2023</p>
+                <div class="social">
+                    <a href="https://www.facebook.com/stan.peters.925" target="_blank"><i class="fab fa-facebook fa-2x"> </i></a>
+                    <a href="https://www.instagram.com/stanpeters1996/" target="_blank"><i class="fab fa-instagram fa-2x"> </i></a>
+                    <a href="https://www.linkedin.com/in/stan-peters-9376bb112/" target="_blank"><i class="fab fa-linkedin fa-2x"> </i></a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
